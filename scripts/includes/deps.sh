@@ -63,7 +63,7 @@ function setup_proto_deps() {
     done
 
     go install github.com/gogo/protobuf/protoc-gen-gogo
-    go install github.com/golang/protobuf/protoc-gen-go
+    go install google.golang.org/protobuf/protoc-gen-go
 
     PATH="${GOBIN:-"${HOME}/go/bin"}:${PATH}"
     export PATH
